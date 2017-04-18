@@ -1,0 +1,1308 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/oscmejia/os-utils#readme"
+
+    >os-utils (v0.0.14)</a>
+</h1>
+<h4>an operating-system utility library</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils">module os-utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.allLoadavg">
+            function <span class="apidocSignatureSpan">os-utils.</span>allLoadavg
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.cpuCount">
+            function <span class="apidocSignatureSpan">os-utils.</span>cpuCount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.cpuFree">
+            function <span class="apidocSignatureSpan">os-utils.</span>cpuFree
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.cpuUsage">
+            function <span class="apidocSignatureSpan">os-utils.</span>cpuUsage
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.freeCommand">
+            function <span class="apidocSignatureSpan">os-utils.</span>freeCommand
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.freemem">
+            function <span class="apidocSignatureSpan">os-utils.</span>freemem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.freememPercentage">
+            function <span class="apidocSignatureSpan">os-utils.</span>freememPercentage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.getProcesses">
+            function <span class="apidocSignatureSpan">os-utils.</span>getProcesses
+            <span class="apidocSignatureSpan">(nProcess, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.harddrive">
+            function <span class="apidocSignatureSpan">os-utils.</span>harddrive
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.loadavg">
+            function <span class="apidocSignatureSpan">os-utils.</span>loadavg
+            <span class="apidocSignatureSpan">(_time)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.platform">
+            function <span class="apidocSignatureSpan">os-utils.</span>platform
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.processUptime">
+            function <span class="apidocSignatureSpan">os-utils.</span>processUptime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.sysUptime">
+            function <span class="apidocSignatureSpan">os-utils.</span>sysUptime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.totalmem">
+            function <span class="apidocSignatureSpan">os-utils.</span>totalmem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.allLoadavg">module os-utils.allLoadavg</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.allLoadavg.allLoadavg">
+            function <span class="apidocSignatureSpan">os-utils.</span>allLoadavg
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.cpuCount">module os-utils.cpuCount</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.cpuCount.cpuCount">
+            function <span class="apidocSignatureSpan">os-utils.</span>cpuCount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.cpuFree">module os-utils.cpuFree</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.cpuFree.cpuFree">
+            function <span class="apidocSignatureSpan">os-utils.</span>cpuFree
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.cpuUsage">module os-utils.cpuUsage</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.cpuUsage.cpuUsage">
+            function <span class="apidocSignatureSpan">os-utils.</span>cpuUsage
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.freeCommand">module os-utils.freeCommand</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.freeCommand.freeCommand">
+            function <span class="apidocSignatureSpan">os-utils.</span>freeCommand
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.freemem">module os-utils.freemem</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.freemem.freemem">
+            function <span class="apidocSignatureSpan">os-utils.</span>freemem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.freememPercentage">module os-utils.freememPercentage</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.freememPercentage.freememPercentage">
+            function <span class="apidocSignatureSpan">os-utils.</span>freememPercentage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.getProcesses">module os-utils.getProcesses</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.getProcesses.getProcesses">
+            function <span class="apidocSignatureSpan">os-utils.</span>getProcesses
+            <span class="apidocSignatureSpan">(nProcess, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.harddrive">module os-utils.harddrive</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.harddrive.harddrive">
+            function <span class="apidocSignatureSpan">os-utils.</span>harddrive
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.loadavg">module os-utils.loadavg</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.loadavg.loadavg">
+            function <span class="apidocSignatureSpan">os-utils.</span>loadavg
+            <span class="apidocSignatureSpan">(_time)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.platform">module os-utils.platform</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.platform.platform">
+            function <span class="apidocSignatureSpan">os-utils.</span>platform
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.processUptime">module os-utils.processUptime</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.processUptime.processUptime">
+            function <span class="apidocSignatureSpan">os-utils.</span>processUptime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.sysUptime">module os-utils.sysUptime</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.sysUptime.sysUptime">
+            function <span class="apidocSignatureSpan">os-utils.</span>sysUptime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.os-utils.totalmem">module os-utils.totalmem</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.os-utils.totalmem.totalmem">
+            function <span class="apidocSignatureSpan">os-utils.</span>totalmem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils" id="apidoc.module.os-utils">module os-utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.allLoadavg" id="apidoc.element.os-utils.allLoadavg">
+        function <span class="apidocSignatureSpan">os-utils.</span>allLoadavg
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">allLoadavg = function (){
+
+    var loads = _os.loadavg();
+    		
+    return loads[0].toFixed(4)+&#x27;,&#x27;+loads[1].toFixed(4)+&#x27;,&#x27;+loads[2].toFixed(4);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.cpuCount" id="apidoc.element.os-utils.cpuCount">
+        function <span class="apidocSignatureSpan">os-utils.</span>cpuCount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cpuCount = function (){
+    return _os.cpus().length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.cpuFree" id="apidoc.element.os-utils.cpuFree">
+        function <span class="apidocSignatureSpan">os-utils.</span>cpuFree
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cpuFree = function (callback){
+    getCPUUsage(callback, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	var os 	= require(&#x27;os-utils&#x27;);
+
+
+	os.cpuUsage(function(v){
+		console.log( &#x27;CPU Usage (%): &#x27; + v );
+	});
+
+	os.<span class="apidocCodeKeywordSpan">cpuFree</span>(function(v){
+
+
+
+
+## Usage
+
+The follwoing methods are available:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.cpuUsage" id="apidoc.element.os-utils.cpuUsage">
+        function <span class="apidocSignatureSpan">os-utils.</span>cpuUsage
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cpuUsage = function (callback){
+    getCPUUsage(callback, false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	npm install os-utils
+
+Then in your code
+	
+	var os 	= require(&#x27;os-utils&#x27;);
+
+
+	os.<span class="apidocCodeKeywordSpan">cpuUsage</span>(function(v){
+		console.log( &#x27;CPU Usage (%): &#x27; + v );
+	});
+
+	os.cpuFree(function(v){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.freeCommand" id="apidoc.element.os-utils.freeCommand">
+        function <span class="apidocSignatureSpan">os-utils.</span>freeCommand
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">freeCommand = function (callback){
+
+    // Only Linux
+    require(&#x27;child_process&#x27;).exec(&#x27;free -m&#x27;, function(error, stdout, stderr) {
+
+       var lines = stdout.split(&#x22;\n&#x22;);
+
+
+       var str_mem_info = lines[1].replace( /[\s\n\r]+/g,&#x27; &#x27;);
+
+       var mem_info = str_mem_info.split(&#x27; &#x27;)
+
+       total_mem    = parseFloat(mem_info[1])
+       free_mem     = parseFloat(mem_info[3])
+       buffers_mem  = parseFloat(mem_info[5])
+       cached_mem   = parseFloat(mem_info[6])
+
+       used_mem = total_mem - (free_mem + buffers_mem + cached_mem)
+
+       callback(used_mem -2);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.freemem" id="apidoc.element.os-utils.freemem">
+        function <span class="apidocSignatureSpan">os-utils.</span>freemem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">freemem = function (){
+    return _os.freemem() / ( 1024 * 1024 );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get number of CPU
+
+	os.countCPUs()
+
+
+### Get current free memory
+
+	os.<span class="apidocCodeKeywordSpan">freemem</span>()
+
+
+### Get total memory
+
+	os.totalmem()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.freememPercentage" id="apidoc.element.os-utils.freememPercentage">
+        function <span class="apidocSignatureSpan">os-utils.</span>freememPercentage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">freememPercentage = function (){
+    return _os.freemem() / _os.totalmem();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get total memory
+
+	os.totalmem()
+
+
+### Get a percentage reporesentinf the free memory
+
+	os.<span class="apidocCodeKeywordSpan">freememPercentage</span>()
+
+
+### Get the number of miliseconds that the system has been running for.
+
+	os.sysUptime();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.getProcesses" id="apidoc.element.os-utils.getProcesses">
+        function <span class="apidocSignatureSpan">os-utils.</span>getProcesses
+        <span class="apidocSignatureSpan">(nProcess, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getProcesses = function (nProcess, callback){
+
+    // if nprocess is undefined then is function
+    if(typeof nProcess === &#x27;function&#x27;){
+
+        callback =nProcess;
+        nProcess = 0
+    }
+
+    command = &#x27;ps -eo pcpu,pmem,time,args | sort -k 1 -r | head -n&#x27;+10
+    //command = &#x27;ps aux | head -n &#x27;+ 11
+    //command = &#x27;ps aux | head -n &#x27;+ (nProcess + 1)
+    if (nProcess &#x3e; 0)
+        command = &#x27;ps -eo pcpu,pmem,time,args | sort -k 1 -r | head -n&#x27;+(nProcess + 1)
+
+    require(&#x27;child_process&#x27;).exec(command, function(error, stdout, stderr) {
+
+        var that = this
+
+        var lines = stdout.split(&#x22;\n&#x22;);
+        lines.shift()
+        lines.pop()
+
+        var result = &#x27;&#x27;
+
+
+        lines.forEach(function(_item,_i){
+
+            var _str = _item.replace( /[\s\n\r]+/g,&#x27; &#x27;);
+
+            _str = _str.split(&#x27; &#x27;)
+
+            // result += _str[10]+&#x22; &#x22;+_str[9]+&#x22; &#x22;+_str[2]+&#x22; &#x22;+_str[3]+&#x22;\n&#x22;;  // process
+            result += _str[1]+&#x22; &#x22;+_str[2]+&#x22; &#x22;+_str[3]+&#x22; &#x22;+_str[4].substring((_str[4].length - 25))+&#x22;\n&#x22;;  // process
+
+        });
+
+        callback(result);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.harddrive" id="apidoc.element.os-utils.harddrive">
+        function <span class="apidocSignatureSpan">os-utils.</span>harddrive
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">harddrive = function (callback){
+
+    require(&#x27;child_process&#x27;).exec(&#x27;df -k&#x27;, function(error, stdout, stderr) {
+
+        var total = 0;
+        var used = 0;
+        var free = 0;
+
+        var lines = stdout.split(&#x22;\n&#x22;);
+
+        var str_disk_info = lines[1].replace( /[\s\n\r]+/g,&#x27; &#x27;);
+
+        var disk_info = str_disk_info.split(&#x27; &#x27;);
+
+        total = Math.ceil((disk_info[1] * 1024)/ Math.pow(1024,2));
+        used = Math.ceil(disk_info[2] * 1024 / Math.pow(1024,2)) ;
+        free = Math.ceil(disk_info[3] * 1024 / Math.pow(1024,2)) ;
+
+        callback(total, free, used);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.loadavg" id="apidoc.element.os-utils.loadavg">
+        function <span class="apidocSignatureSpan">os-utils.</span>loadavg
+        <span class="apidocSignatureSpan">(_time)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loadavg = function (_time){
+
+    if(_time === undefined || (_time !== 5 &#x26;&#x26; _time !== 15) ) _time = 1;
+	
+    var loads = _os.loadavg();
+    var v = 0;
+    if(_time == 1) v = loads[0];
+    if(_time == 5) v = loads[1];
+    if(_time == 15) v = loads[2];
+		
+    return v;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get the number of miliseconds that the process has been running for.
+
+	os.processUptime()
+
+
+### Get average load for the 1, 5 or 15 minutes
+
+	os.<span class="apidocCodeKeywordSpan">loadavg</span>(1)
+	os.loadavg(5)
+	os.loadavg(15)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.platform" id="apidoc.element.os-utils.platform">
+        function <span class="apidocSignatureSpan">os-utils.</span>platform
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">platform = function (){
+    return process.platform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Calculate free CPU in the next second. This is not based on average CPU usage like in the &#x22;os&#x22; module. The callback
+ will receive a parameter with the value
+
+	os.cpuFree( callback );
+
+	
+### Get the platform name
+
+	os.<span class="apidocCodeKeywordSpan">platform</span>();
+
+
+### Get number of CPU
+
+	os.countCPUs()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.processUptime" id="apidoc.element.os-utils.processUptime">
+        function <span class="apidocSignatureSpan">os-utils.</span>processUptime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processUptime = function (){
+    //seconds
+    return process.uptime();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get the number of miliseconds that the system has been running for.
+
+	os.sysUptime();
+	
+	
+### Get the number of miliseconds that the process has been running for.
+
+	os.<span class="apidocCodeKeywordSpan">processUptime</span>()
+
+
+### Get average load for the 1, 5 or 15 minutes
+
+	os.loadavg(1)
+	os.loadavg(5)
+	os.loadavg(15)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.sysUptime" id="apidoc.element.os-utils.sysUptime">
+        function <span class="apidocSignatureSpan">os-utils.</span>sysUptime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sysUptime = function (){
+    //seconds
+    return _os.uptime();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get a percentage reporesentinf the free memory
+
+	os.freememPercentage()
+
+
+### Get the number of miliseconds that the system has been running for.
+
+	os.<span class="apidocCodeKeywordSpan">sysUptime</span>();
+	
+	
+### Get the number of miliseconds that the process has been running for.
+
+	os.processUptime()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.totalmem" id="apidoc.element.os-utils.totalmem">
+        function <span class="apidocSignatureSpan">os-utils.</span>totalmem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">totalmem = function (){
+
+    return _os.totalmem() / ( 1024 * 1024 );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get current free memory
+
+	os.freemem()
+
+
+### Get total memory
+
+	os.<span class="apidocCodeKeywordSpan">totalmem</span>()
+
+
+### Get a percentage reporesentinf the free memory
+
+	os.freememPercentage()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.allLoadavg" id="apidoc.module.os-utils.allLoadavg">module os-utils.allLoadavg</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.allLoadavg.allLoadavg" id="apidoc.element.os-utils.allLoadavg.allLoadavg">
+        function <span class="apidocSignatureSpan">os-utils.</span>allLoadavg
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">allLoadavg = function (){
+
+    var loads = _os.loadavg();
+    		
+    return loads[0].toFixed(4)+&#x27;,&#x27;+loads[1].toFixed(4)+&#x27;,&#x27;+loads[2].toFixed(4);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.cpuCount" id="apidoc.module.os-utils.cpuCount">module os-utils.cpuCount</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.cpuCount.cpuCount" id="apidoc.element.os-utils.cpuCount.cpuCount">
+        function <span class="apidocSignatureSpan">os-utils.</span>cpuCount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cpuCount = function (){
+    return _os.cpus().length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.cpuFree" id="apidoc.module.os-utils.cpuFree">module os-utils.cpuFree</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.cpuFree.cpuFree" id="apidoc.element.os-utils.cpuFree.cpuFree">
+        function <span class="apidocSignatureSpan">os-utils.</span>cpuFree
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cpuFree = function (callback){
+    getCPUUsage(callback, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	var os 	= require(&#x27;os-utils&#x27;);
+
+
+	os.cpuUsage(function(v){
+		console.log( &#x27;CPU Usage (%): &#x27; + v );
+	});
+
+	os.<span class="apidocCodeKeywordSpan">cpuFree</span>(function(v){
+
+
+
+
+## Usage
+
+The follwoing methods are available:
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.cpuUsage" id="apidoc.module.os-utils.cpuUsage">module os-utils.cpuUsage</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.cpuUsage.cpuUsage" id="apidoc.element.os-utils.cpuUsage.cpuUsage">
+        function <span class="apidocSignatureSpan">os-utils.</span>cpuUsage
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cpuUsage = function (callback){
+    getCPUUsage(callback, false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	npm install os-utils
+
+Then in your code
+	
+	var os 	= require(&#x27;os-utils&#x27;);
+
+
+	os.<span class="apidocCodeKeywordSpan">cpuUsage</span>(function(v){
+		console.log( &#x27;CPU Usage (%): &#x27; + v );
+	});
+
+	os.cpuFree(function(v){
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.freeCommand" id="apidoc.module.os-utils.freeCommand">module os-utils.freeCommand</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.freeCommand.freeCommand" id="apidoc.element.os-utils.freeCommand.freeCommand">
+        function <span class="apidocSignatureSpan">os-utils.</span>freeCommand
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">freeCommand = function (callback){
+
+    // Only Linux
+    require(&#x27;child_process&#x27;).exec(&#x27;free -m&#x27;, function(error, stdout, stderr) {
+
+       var lines = stdout.split(&#x22;\n&#x22;);
+
+
+       var str_mem_info = lines[1].replace( /[\s\n\r]+/g,&#x27; &#x27;);
+
+       var mem_info = str_mem_info.split(&#x27; &#x27;)
+
+       total_mem    = parseFloat(mem_info[1])
+       free_mem     = parseFloat(mem_info[3])
+       buffers_mem  = parseFloat(mem_info[5])
+       cached_mem   = parseFloat(mem_info[6])
+
+       used_mem = total_mem - (free_mem + buffers_mem + cached_mem)
+
+       callback(used_mem -2);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.freemem" id="apidoc.module.os-utils.freemem">module os-utils.freemem</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.freemem.freemem" id="apidoc.element.os-utils.freemem.freemem">
+        function <span class="apidocSignatureSpan">os-utils.</span>freemem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">freemem = function (){
+    return _os.freemem() / ( 1024 * 1024 );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get number of CPU
+
+	os.countCPUs()
+
+
+### Get current free memory
+
+	os.<span class="apidocCodeKeywordSpan">freemem</span>()
+
+
+### Get total memory
+
+	os.totalmem()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.freememPercentage" id="apidoc.module.os-utils.freememPercentage">module os-utils.freememPercentage</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.freememPercentage.freememPercentage" id="apidoc.element.os-utils.freememPercentage.freememPercentage">
+        function <span class="apidocSignatureSpan">os-utils.</span>freememPercentage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">freememPercentage = function (){
+    return _os.freemem() / _os.totalmem();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get total memory
+
+	os.totalmem()
+
+
+### Get a percentage reporesentinf the free memory
+
+	os.<span class="apidocCodeKeywordSpan">freememPercentage</span>()
+
+
+### Get the number of miliseconds that the system has been running for.
+
+	os.sysUptime();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.getProcesses" id="apidoc.module.os-utils.getProcesses">module os-utils.getProcesses</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.getProcesses.getProcesses" id="apidoc.element.os-utils.getProcesses.getProcesses">
+        function <span class="apidocSignatureSpan">os-utils.</span>getProcesses
+        <span class="apidocSignatureSpan">(nProcess, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getProcesses = function (nProcess, callback){
+
+    // if nprocess is undefined then is function
+    if(typeof nProcess === &#x27;function&#x27;){
+
+        callback =nProcess;
+        nProcess = 0
+    }
+
+    command = &#x27;ps -eo pcpu,pmem,time,args | sort -k 1 -r | head -n&#x27;+10
+    //command = &#x27;ps aux | head -n &#x27;+ 11
+    //command = &#x27;ps aux | head -n &#x27;+ (nProcess + 1)
+    if (nProcess &#x3e; 0)
+        command = &#x27;ps -eo pcpu,pmem,time,args | sort -k 1 -r | head -n&#x27;+(nProcess + 1)
+
+    require(&#x27;child_process&#x27;).exec(command, function(error, stdout, stderr) {
+
+        var that = this
+
+        var lines = stdout.split(&#x22;\n&#x22;);
+        lines.shift()
+        lines.pop()
+
+        var result = &#x27;&#x27;
+
+
+        lines.forEach(function(_item,_i){
+
+            var _str = _item.replace( /[\s\n\r]+/g,&#x27; &#x27;);
+
+            _str = _str.split(&#x27; &#x27;)
+
+            // result += _str[10]+&#x22; &#x22;+_str[9]+&#x22; &#x22;+_str[2]+&#x22; &#x22;+_str[3]+&#x22;\n&#x22;;  // process
+            result += _str[1]+&#x22; &#x22;+_str[2]+&#x22; &#x22;+_str[3]+&#x22; &#x22;+_str[4].substring((_str[4].length - 25))+&#x22;\n&#x22;;  // process
+
+        });
+
+        callback(result);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.harddrive" id="apidoc.module.os-utils.harddrive">module os-utils.harddrive</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.harddrive.harddrive" id="apidoc.element.os-utils.harddrive.harddrive">
+        function <span class="apidocSignatureSpan">os-utils.</span>harddrive
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">harddrive = function (callback){
+
+    require(&#x27;child_process&#x27;).exec(&#x27;df -k&#x27;, function(error, stdout, stderr) {
+
+        var total = 0;
+        var used = 0;
+        var free = 0;
+
+        var lines = stdout.split(&#x22;\n&#x22;);
+
+        var str_disk_info = lines[1].replace( /[\s\n\r]+/g,&#x27; &#x27;);
+
+        var disk_info = str_disk_info.split(&#x27; &#x27;);
+
+        total = Math.ceil((disk_info[1] * 1024)/ Math.pow(1024,2));
+        used = Math.ceil(disk_info[2] * 1024 / Math.pow(1024,2)) ;
+        free = Math.ceil(disk_info[3] * 1024 / Math.pow(1024,2)) ;
+
+        callback(total, free, used);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.loadavg" id="apidoc.module.os-utils.loadavg">module os-utils.loadavg</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.loadavg.loadavg" id="apidoc.element.os-utils.loadavg.loadavg">
+        function <span class="apidocSignatureSpan">os-utils.</span>loadavg
+        <span class="apidocSignatureSpan">(_time)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loadavg = function (_time){
+
+    if(_time === undefined || (_time !== 5 &#x26;&#x26; _time !== 15) ) _time = 1;
+	
+    var loads = _os.loadavg();
+    var v = 0;
+    if(_time == 1) v = loads[0];
+    if(_time == 5) v = loads[1];
+    if(_time == 15) v = loads[2];
+		
+    return v;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get the number of miliseconds that the process has been running for.
+
+	os.processUptime()
+
+
+### Get average load for the 1, 5 or 15 minutes
+
+	os.<span class="apidocCodeKeywordSpan">loadavg</span>(1)
+	os.loadavg(5)
+	os.loadavg(15)
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.platform" id="apidoc.module.os-utils.platform">module os-utils.platform</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.platform.platform" id="apidoc.element.os-utils.platform.platform">
+        function <span class="apidocSignatureSpan">os-utils.</span>platform
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">platform = function (){
+    return process.platform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Calculate free CPU in the next second. This is not based on average CPU usage like in the &#x22;os&#x22; module. The callback
+ will receive a parameter with the value
+
+	os.cpuFree( callback );
+
+	
+### Get the platform name
+
+	os.<span class="apidocCodeKeywordSpan">platform</span>();
+
+
+### Get number of CPU
+
+	os.countCPUs()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.processUptime" id="apidoc.module.os-utils.processUptime">module os-utils.processUptime</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.processUptime.processUptime" id="apidoc.element.os-utils.processUptime.processUptime">
+        function <span class="apidocSignatureSpan">os-utils.</span>processUptime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processUptime = function (){
+    //seconds
+    return process.uptime();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get the number of miliseconds that the system has been running for.
+
+	os.sysUptime();
+	
+	
+### Get the number of miliseconds that the process has been running for.
+
+	os.<span class="apidocCodeKeywordSpan">processUptime</span>()
+
+
+### Get average load for the 1, 5 or 15 minutes
+
+	os.loadavg(1)
+	os.loadavg(5)
+	os.loadavg(15)
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.sysUptime" id="apidoc.module.os-utils.sysUptime">module os-utils.sysUptime</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.sysUptime.sysUptime" id="apidoc.element.os-utils.sysUptime.sysUptime">
+        function <span class="apidocSignatureSpan">os-utils.</span>sysUptime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sysUptime = function (){
+    //seconds
+    return _os.uptime();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get a percentage reporesentinf the free memory
+
+	os.freememPercentage()
+
+
+### Get the number of miliseconds that the system has been running for.
+
+	os.<span class="apidocCodeKeywordSpan">sysUptime</span>();
+	
+	
+### Get the number of miliseconds that the process has been running for.
+
+	os.processUptime()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.os-utils.totalmem" id="apidoc.module.os-utils.totalmem">module os-utils.totalmem</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.os-utils.totalmem.totalmem" id="apidoc.element.os-utils.totalmem.totalmem">
+        function <span class="apidocSignatureSpan">os-utils.</span>totalmem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">totalmem = function (){
+
+    return _os.totalmem() / ( 1024 * 1024 );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Get current free memory
+
+	os.freemem()
+
+
+### Get total memory
+
+	os.<span class="apidocCodeKeywordSpan">totalmem</span>()
+
+
+### Get a percentage reporesentinf the free memory
+
+	os.freememPercentage()
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
