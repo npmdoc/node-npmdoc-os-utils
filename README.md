@@ -1,6 +1,7 @@
 # npmdoc-os-utils
 
-api documentation for  [os-utils (v0.0.14)](https://github.com/oscmejia/os-utils#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-os-utils.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-os-utils) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-os-utils.svg)](https://travis-ci.org/npmdoc/node-npmdoc-os-utils)
+#### basic api documentation for  [os-utils (v0.0.14)](https://github.com/oscmejia/os-utils#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-os-utils.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-os-utils) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-os-utils.svg)](https://travis-ci.org/npmdoc/node-npmdoc-os-utils)
+
 #### an operating-system utility library
 
 [![NPM](https://nodei.co/npm/os-utils.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/os-utils)
@@ -64,7 +65,8 @@ api documentation for  [os-utils (v0.0.14)](https://github.com/oscmejia/os-utils
         "url": "git://github.com/oscmejia/os-utils.git"
     },
     "url": "http://oscar-mejia.com",
-    "version": "0.0.14"
+    "version": "0.0.14",
+    "bin": {}
 }
 ```
 
